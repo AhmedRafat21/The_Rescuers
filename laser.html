@@ -1,0 +1,1852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laser Application</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{ background-color: #9351EE;}
+
+
+.logo{
+
+
+filter: brightness(1000%);
+position: fixed;
+width: 230px;
+height: 230px;
+left: 27px;
+top:10px;
+
+background: url(photo_2023-08-05_17-03-50);
+z-index: +1;
+mix-blend-mode: normal;
+border-radius: 36px;
+}
+
+.Ellipse1{
+
+position: absolute;
+width: 650px;
+height: 674px;
+left: 819px;
+top: 421px;
+z-index: -1;
+
+background: #FF99A2;
+opacity: 0.99;
+filter: blur(200px);
+}
+
+.Ellipse2{
+
+position: absolute;
+width: 639px;
+height: 618px;
+left: 411px;
+top: -51px;
+z-index: -1;
+
+background: #9613AD;
+opacity: 0.99;
+filter: blur(200px);}
+
+
+.Ellipse3{
+
+position: absolute;
+width: 676px;
+height: 628px;
+left: -53.17px;
+top: -70px;
+z-index: -1;
+background: #FF1FA2;
+opacity: 0.99;
+filter: blur(200px);}
+
+
+.Ellipse4{
+
+position: absolute;
+width: 717px;
+height: 725px;
+left: -16px;
+top: 367px;
+z-index: -1;
+background: #9613AD;
+opacity: 0.99;
+filter: blur(200px);}
+
+
+.Ellipse5{
+
+position: absolute;
+width: 790px;
+height: 750.36px;
+left: 838px;
+top: -96px;
+z-index: -1;
+background: #EB95A4;
+opacity: 0.99;
+filter: blur(200px);}
+
+
+.Ellipse6{
+position: absolute;
+width: 733.96px;
+height: 715.64px;
+left: 372px;
+top: 431px;
+z-index: -1;
+background: #8349FF;
+opacity: 0.99;
+filter: blur(200px);}
+
+
+.Home{
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: fixed;
+width: 119px;
+height: 50px;
+left: 623px;
+top: 50px;
+z-index: +1;
+background: #FFFFFF;
+mix-blend-mode: screen;
+box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+
+
+/* Home */
+
+width: 76px;
+height: 33px;
+
+font-family: 'Cherry Swash';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 33px;
+display: flex;
+align-items: center;
+text-align: center;
+text-decoration: none;
+color: #000000;
+
+transition: 0.7s ease;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;}
+.Home:hover{transform: scale(1.07);}
+
+.Subjects{
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: fixed;
+width: 132px;
+height: 50px;
+left: 776.5px;
+top: 50px;
+z-index: +1;
+background: #FFFBFE;
+mix-blend-mode: screen;
+border-radius: 20px;
+text-decoration: none;
+
+/* Subjects */
+
+width: 98px;
+height: 33px;
+
+font-family: 'Cherry Swash';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 33px;
+display: flex;
+align-items: center;
+text-align: center;
+text-decoration: none;
+color: #000000;
+
+transition: 0.7s ease;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;}
+.Subjects:hover{transform: scale(1.07);}
+
+.WhoWeAre{
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: fixed;
+width: 197px;
+height: 50px;
+left: 942px;
+top: 50px;
+z-index: +1;
+background: #FFFFFF;
+mix-blend-mode: screen;
+border-radius: 20px;
+
+transition: 0.7s ease;
+/* Who We Are */
+
+width: 167px;
+height: 33px;
+
+font-family: 'Cherry Swash';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 33px;
+display: flex;
+align-items: center;
+text-align: center;
+text-decoration: none;
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;}
+.WhoWeAre:hover{transform: scale(1.07);}
+
+.ContactMe{
+/* Frame 21 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: fixed;
+width: 168px;
+height: 50px;
+left: 1175px;
+top: 50px;
+z-index: +1;
+background: #FFFBFE;
+mix-blend-mode: screen;
+border-radius: 20px;
+
+
+/* Contact Me */
+
+width: 142px;
+height: 33px;
+
+font-family: 'Cherry Swash';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 33px;
+display: flex;
+align-items: center;
+text-align: center;
+text-decoration: none;
+color: #000000;
+transition: 0.7s ease;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;}
+.ContactMe:hover{transform: scale(1.07);}
+
+.rectangle1{/* Rectangle 12 */
+
+position: absolute;
+width: 897px;
+height: 165px;
+left: 272px;
+top: 279px;
+
+background: linear-gradient(116.88deg, #FD929C 33.18%, #FA5ABC 66.35%);
+border-radius: 60px;}
+.laser{/* Laser-Application */
+
+position: absolute;
+width: 675px;
+height: 47px;
+left: 440px;
+top: 265px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 70px;
+line-height: 88px;
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+background: rgba(0, 0, 0, 0);
+color: #FFFFFF;}
+
+.rectangle2{/* Group 1 */
+
+position: absolute;
+width: 1127px;
+height: 165px;
+left: 147px;
+top: 519px;
+
+
+
+/* Rectangle 12 */
+
+position: absolute;
+width: 1107px;
+height: 165px;
+left: 167px;
+top: 519px;
+
+background: linear-gradient(116.88deg, #FD929C 33.18%, #FA5ABC 66.35%);
+border-radius: 60px;}
+.week1{/* week 1 */
+
+position: absolute;
+width: 101px;
+height: 22px;
+left: 194px;
+top: 518px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 40px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+background: rgba(0, 0, 0, 0);
+color: #FFFFFF;}
+
+.rectangle3{/* Group 2 */
+
+position: absolute;
+width: 1127px;
+height: 165px;
+left: 147px;
+top: 748px;
+
+
+
+/* Rectangle 13 */
+
+position: absolute;
+width: 1107px;
+height: 165px;
+left: 167px;
+top: 748px;
+
+background: linear-gradient(116.88deg, #FF99A2 33.18%, #FA5ABC 66.35%);
+border-radius: 60px;}
+.week2{/* week 2 */
+
+position: absolute;
+width: 107px;
+height: 22px;
+left: 191px;
+top: 752px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 40px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+text-align: center;
+text-transform: capitalize;
+background: rgba(0, 0, 0, 0);
+color: #FFFFFF;}
+
+.rectangle4{/* Group 3 */
+
+position: absolute;
+width: 1127px;
+height: 165px;
+left: 147px;
+top: 977px;
+
+/* Rectangle 14 */
+
+position: absolute;
+width: 1107px;
+height: 165px;
+left: 167px;
+top: 977px;
+
+background: linear-gradient(116.88deg, #FF99A2 33.18%, #FA5ABC 66.35%);
+border-radius: 60px;}
+.week3{/* week 3 */
+
+position: absolute;
+width: 107px;
+height: 22px;
+left: 191px;
+top: 981px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 40px;
+
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+background: rgba(0, 0, 0, 0);
+color: #FFFFFF;}
+
+.rectangle5{/* Rectangle 15 */
+
+position: absolute;
+width: 1107px;
+height: 165px;
+left: 167px;
+top: 1206px;
+
+background: linear-gradient(116.88deg, #FF99A2 33.18%, #FA5ABC 66.35%);
+border-radius: 60px;}
+.week4 {/* week 4 */
+
+position: absolute;
+width: 109px;
+height: 22px;
+left: 190px;
+top: 1210px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 40px;
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+background: rgba(0, 0, 0, 0);
+color: #FFFFFF;}
+
+.rectangle6{/* Rectangle 16 */
+
+position: absolute;
+width: 1107px;
+height: 165px;
+left: 167px;
+top: 1435px;
+
+background: linear-gradient(116.88deg, #FF99A2 33.18%, #FA5ABC 66.35%);
+border-radius: 60px;}
+.week5{/* week 5 */
+
+position: absolute;
+width: 107px;
+height: 22px;
+left: 191px;
+top: 1439px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 40px;
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+background: rgba(0, 0, 0, 0);
+color: #FFFFFF;}
+    
+.rectangle7{/* Rectangle 17 */
+
+position: absolute;
+width: 1107px;
+height: 165px;
+left: 167px;
+top: 1664px;
+
+background: linear-gradient(116.88deg, #FF99A2 33.18%, #FA5ABC 66.35%);
+border-radius: 60px;}    
+.week6{/* week 6 */
+
+position: absolute;
+width: 108px;
+height: 22px;
+left: 190px;
+top: 1668px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 40px;
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+background: rgba(0, 0, 0, 0);
+color: #FFFFFF;}    
+    
+.rectangle8{/* Rectangle 18 */
+
+position: absolute;
+width: 1107px;
+height: 165px;
+left: 167px;
+top: 1893px;
+
+background: linear-gradient(116.88deg, #FF99A2 33.18%, #FA5ABC 66.35%);
+border-radius: 60px;}    
+.week7{/* week 7 */
+
+position: absolute;
+width: 106px;
+height: 22px;
+left: 191px;
+top: 1897px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 40px;
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+background: rgba(0, 0, 0, 0);
+color: #FFFFFF;}    
+    
+
+.rectangle9{/* Rectangle 19 */
+
+position: absolute;
+width: 1107px;
+height: 165px;
+left: 167px;
+top: 2122px;
+
+background: linear-gradient(116.88deg, #FF99A2 33.18%, #FA5ABC 66.35%);
+border-radius: 60px;}
+.week8{/* week 8 */
+
+position: absolute;
+width: 107px;
+height: 22px;
+left: 191px;
+top: 2126px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 40px;
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+background: rgba(0, 0, 0, 0);
+color: #FFFFFF;}
+
+
+.rectangle10{/* Rectangle 20 */
+
+position: absolute;
+width: 1107px;
+height: 165px;
+left: 167px;
+top: 2351px;
+
+background: linear-gradient(116.88deg, #FF99A2 33.18%, #FA5ABC 66.35%);
+border-radius: 60px;}
+.week9{/* week 9 */
+
+position: absolute;
+width: 108px;
+height: 22px;
+left: 190px;
+top: 2355px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 40px;
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+background: rgba(0, 0, 0, 0);
+color: #FFFFFF;}
+
+
+.rectangle11{/* Rectangle 21 */
+
+position: absolute;
+width: 1107px;
+height: 165px;
+left: 167px;
+top: 2580px;
+
+background: linear-gradient(116.88deg, #FF99A2 33.18%, #FA5ABC 66.35%);
+border-radius: 60px;}
+.week10{/* week 10 */
+
+position: absolute;
+width: 123px;
+height: 22px;
+left: 183px;
+top: 2584px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 40px;
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+background: rgba(0, 0, 0, 0);
+color: #FFFFFF;}
+
+
+.rectangle12{/* Rectangle 22 */
+
+position: absolute;
+width: 1107px;
+height: 165px;
+left: 167px;
+top: 2809px;
+
+background: linear-gradient(116.88deg, #FF99A2 33.18%, #FA5ABC 66.35%);
+border-radius: 60px;}
+.week11{/* week 11 */
+
+position: absolute;
+width: 113px;
+height: 22px;
+left: 188px;
+top: 2813px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 40px;
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+background: rgba(0, 0, 0, 0);
+color: #FFFFFF;}
+
+
+.rectangle13{/* Rectangle 23 */
+
+position: absolute;
+width: 1107px;
+height: 165px;
+left: 167px;
+top: 3038px;
+
+background: linear-gradient(116.88deg, #FF99A2 33.18%, #FA5ABC 66.35%);
+border-radius: 60px;}
+.week12{/* week 12 */
+
+position: absolute;
+width: 119px;
+height: 22px;
+left: 185px;
+top: 3042px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 40px;
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+background: rgba(0, 0, 0, 0);
+color: #FFFFFF;}
+
+
+
+@media (max-width:480px){
+    
+    .logo{width: 93px;
+        height: 93px;
+        left: -5px;
+        top:10px;
+        z-index: +1;
+        background: url(photo_2023-08-05_17-03-50);
+        z-index: +1;}
+    
+    
+.Ellipse1{.Ellipse1{
+
+            position: absolute;
+            width: 317px;
+            height: 305px;
+            left: 174px;
+            top: 71px;
+            z-index: -1;
+            
+            background: #FF99A2;
+            opacity: 0.99;
+            filter: blur(200px);}
+.Ellipse2{position: absolute;
+    width: 291px;
+    height: 210px;
+    left: -95px;
+    top: -100px;
+    z-index: -1;
+    
+    background: #9613AD;
+    opacity: 0.99;
+    filter: blur(200px);}
+.Ellipse3{
+    position: absolute;
+width: 543px;
+height: 421px;
+left: -253px;
+top: -165px;
+    z-index: -1;
+    background: #FF1FA2;
+    opacity: 0.99;
+    filter: blur(200px);}    
+.Ellipse4{
+    position: absolute;
+width: 513px;
+height: 489px;
+left: -317px;
+top: 146px;
+    z-index: -1;
+    background: #9613AD;
+    opacity: 0.99;
+    filter: blur(200px);}
+.Ellipse5{/* Ellipse 5 */
+
+    position: absolute;
+    width: 565px;
+    height: 476px;
+    left: -73.5px;
+    top: -178.5px;
+    z-index: -1;
+    background: #EB95A4;
+    opacity: 0.99;
+    filter: blur(50px);
+position: absolute;
+    width: 426px;
+    height: 383px;
+    left: 38px;
+    top: 122px;
+    z-index: -1;
+    background: #8349FF;
+    opacity: 0.99;
+    filter: blur(150px);}}
+.Ellipse6{/* Ellipse 6 */
+    position: absolute;
+    width: 426px;
+    height: 383px;
+    left: 38px;
+    top: 122px;
+    z-index: -1;
+    background: #8349FF;
+    opacity: 0.99;
+    filter: blur(150px);}
+
+    .Home{
+
+        padding: 5px;
+        gap: 5px;
+       position: fixed;
+        width: 48px;
+        height: 23px;
+        left: 88px;
+        top: 48px;
+        z-index: +1;
+        background: #FFFFFF;
+        mix-blend-mode: screen;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        
+        
+        /* Home */
+        
+        width: 34px;
+        height: 15px;
+        z-index: +1;
+        font-family: 'Cherry Swash';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 33px;}
+
+    .Subjects{
+padding: 5px;
+gap: 5px;
+
+position: fixed;
+width: 51px;
+height: 23px;
+left: 140px;
+top: 48px;
+
+
+
+/* Subjects */
+
+width: 44px;
+height: 15px;
+z-index: +1;
+font-family: 'Cherry Swash';
+font-style: normal;
+font-weight: 700;
+font-size: 11px;
+line-height: 15px;
+
+    }    
+
+    .WhoWeAre{
+        padding: 5px;
+gap: 5px;
+
+position: fixed;
+width: 78px;
+height: 23px;
+left: 204px;
+top: 48px;
+
+
+width: 74px;
+height: 15px;
+z-index: +1;
+font-family: 'Cherry Swash';
+font-style: normal;
+font-weight: 700;
+font-size: 11px;
+line-height: 15px;
+    }
+    .ContactMe{padding: 5px;
+        gap: 5px;
+        
+        position: fixed;
+        width: 66px;
+        height: 23px;
+        left: 296px;
+        top: 48px;
+        
+        
+        
+        /* Subjects */
+        
+        width: 63px;
+        height: 15px;
+        z-index: +1;
+        font-family: 'Cherry Swash';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 15px;}
+    
+    .rectangle1{width: 228px;
+    height: 52px;
+    left: 73px;
+    top: 110px;}
+    .laser{
+
+position: absolute;
+width: 193px;
+height: 14px;
+left: 105px;
+top: 110px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 25px;
+
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+    
+.rectangle2{width: 334px;
+height: 43px;
+left: 20px;
+top: 196px;}
+.week1{width: 32px;
+height: 7px;
+left: 40px;
+top: 203px;
+font-size: 10px;}
+
+.rectangle3{width: 334px;
+height: 43px;
+left: 20px;
+top: 254px;}
+.week2{/* week 2 */
+
+position: absolute;
+width: 34px;
+height: 7px;
+left: 39px;
+top: 261px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 13px;
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+
+.rectangle4{width: 334px;
+height: 43px;
+left: 20px;
+top: 312px;}
+.week3{position: absolute;
+width: 34px;
+height: 7px;
+left: 39px;
+top: 319px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 13px;
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+
+.rectangle5{width: 334px;
+height: 43px;
+left: 20px;
+top: 370px;}
+.week4{position: absolute;
+width: 34px;
+height: 7px;
+left: 39px;
+top: 377px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 13px;
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+
+.rectangle6{width: 334px;
+height: 43px;
+left: 20px;
+top: 428px;}
+.week5{position: absolute;
+width: 34px;
+height: 7px;
+left: 39px;
+top: 435px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 13px;
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+
+.rectangle7{width: 334px;
+height: 43px;
+left: 20px;
+top: 486px;}
+.week6{position: absolute;
+width: 34px;
+height: 7px;
+left: 39px;
+top: 493px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 13px;
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+
+.rectangle8{width: 334px;
+height: 43px;
+left: 20px;
+top: 544px;}
+.week7{position: absolute;
+width: 34px;
+height: 7px;
+left: 39px;
+top: 551px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 13px;
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+
+.rectangle9{width: 334px;
+height: 43px;
+left: 20px;
+top: 602px;}
+.week8{position: absolute;
+width: 34px;
+height: 7px;
+left: 39px;
+top: 609px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 13px;
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+
+.rectangle10{width: 334px;
+height: 43px;
+left: 20px;
+top: 660px;}
+.week9{position: absolute;
+width: 34px;
+height: 7px;
+left: 39px;
+top: 667px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 13px;
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+
+.rectangle11{width: 334px;
+height: 43px;
+left: 20px;
+top: 718px;}
+.week10{position: absolute;
+width: 39px;
+height: 7px;
+left: 39px;
+top: 725px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 13px;
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+
+.rectangle12{width: 334px;
+height: 43px;
+left: 20px;
+top: 776px;}
+.week11{position: absolute;
+width: 39px;
+height: 7px;
+left: 39px;
+top: 783px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 13px;
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+
+.rectangle13{width: 334px;
+height: 43px;
+left: 20px;
+top: 834px;}
+.week12{position: absolute;
+width: 39px;
+height: 7px;
+left: 39px;
+top: 841px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 13px;
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+
+}
+
+@media (min-width:481px) and (max-width:1024px){
+.logo{/* photo_2023-08-05_17-03-50 2 */
+
+position: absolute;
+width: 225px;
+height: 208px;
+left: calc(50% - 225px/2 - 228.5px);
+top: 29px;
+
+background: url(photo_2023-08-05_17-03-50.png);
+mix-blend-mode: normal;
+border-radius: 36px;}
+    
+    
+.Ellipse1{.Ellipse1{
+
+            position: absolute;
+            width: 317px;
+            height: 305px;
+            left: 74px;
+            top: 71px;
+            z-index: -1;
+            
+            background: #FF99A2;
+            opacity: 0.99;
+            filter: blur(200px);}
+.Ellipse2{position: absolute;
+    width: 291px;
+    height: 210px;
+    left: -95px;
+    top: -100px;
+    z-index: -1;
+    
+    background: #9613AD;
+    opacity: 0.99;
+    filter: blur(200px);}
+.Ellipse3{
+    position: absolute;
+width: 543px;
+height: 421px;
+left: -153px;
+top: -165px;
+    z-index: +1;
+    background: #FF1FA2;
+    opacity: 0.99;
+    filter: blur(200px);}    
+.Ellipse4{
+    position: absolute;
+width: 513px;
+height: 489px;
+left: -317px;
+top: 146px;
+    z-index: -1;
+    background: #9613AD;
+    opacity: 0.99;
+    filter: blur(200px);}
+.Ellipse5{/* Ellipse 5 */
+
+    position: absolute;
+    width: 565px;
+    height: 476px;
+    left: -73.5px;
+    top: -178.5px;
+    z-index: -1;
+    background: #EB95A4;
+    opacity: 0.99;
+    filter: blur(50px);
+position: absolute;
+    width: 426px;
+    height: 383px;
+    left: 38px;
+    top: 122px;
+    z-index: -1;
+    background: #8349FF;
+    opacity: 0.99;
+    filter: blur(150px);}}
+.Ellipse6{/* Ellipse 6 */
+    position: absolute;
+    width: 426px;
+    height: 383px;
+    left: 38px;
+    top: 122px;
+    z-index: -1;
+    background: #8349FF;
+    opacity: 0.99;
+    filter: blur(150px);}
+
+.Home{/* Frame 2 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 69px;
+    height: 36px;
+    left: 210px;
+    top: 110px;
+    
+    background: #FFFFFF;
+    mix-blend-mode: screen;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    
+    
+    /* Home */
+    
+    width: 46px;
+    height: 20px;
+    
+    font-family: 'Cherry Swash';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;}
+.Subjects{/* Frame 5 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 77px;
+    height: 36px;
+    left: 297px;
+    top: 110px;
+    
+    background: #FFFBFE;
+    mix-blend-mode: screen;
+    border-radius: 20px;
+    
+    
+    /* Subjects */
+    
+    width: 59px;
+    height: 20px;
+    
+    font-family: 'Cherry Swash';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;}
+
+.WhoWeAre{/* Frame 3 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 122px;
+    height: 36px;
+    left: 393px;
+    top: 110px;
+    
+    background: #FFFFFF;
+    mix-blend-mode: screen;
+    border-radius: 20px;
+    
+    
+    /* Who We Are */
+    
+    width: 101px;
+    height: 20px;
+    
+    font-family: 'Cherry Swash';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;}
+
+.ContactMe{/* Frame 21 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 105px;
+    height: 36px;
+    left: 533px;
+    top: 110px;
+    
+    background: #FFFBFE;
+    mix-blend-mode: screen;
+    border-radius: 20px;
+    
+    
+    /* Contact Me */
+    
+    width: 86px;
+    height: 20px;
+    
+    font-family: 'Cherry Swash';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;}
+   
+ 
+    .rectangle1{/* Rectangle 12 */
+
+position: absolute;
+width: 366px;
+height: 64px;
+left: 142px;
+top: 212px;}
+    .laser{/* Clinical Operative (3) */
+
+position: absolute;
+width: 263px;
+height: 18px;
+left: 220px;
+top: 208px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 33px;
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+    
+.rectangle2{/* Rectangle 12 */
+position: absolute;
+width: 478px;
+height: 53px;
+left: 87px;
+top: 298px;}
+.week1{/* week 1 */
+
+position: absolute;
+width: 32px;
+height: 7px;
+left: 105px;
+top: 306px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 13px;}
+
+.rectangle3{position: absolute;
+width: 478px;
+height: 53px;
+left: 87px;
+top: 360px;}
+.week2{/* week 2 */
+
+position: absolute;
+width: 48.66px;
+height: 8.63px;
+left: 105px;
+top: 369px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 13px;
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+
+.rectangle4{position: absolute;
+width: 478px;
+height: 53px;
+left: 86px;
+top: 422px;}
+.week3{/* week 2 */
+
+position: absolute;
+width: 48.66px;
+height: 8.63px;
+left: 105px;
+top: 431px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 13px;
+
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+
+
+.rectangle5{position: absolute;
+width: 478px;
+height: 53px;
+left: 87px;
+top: 484px;}
+.week4{
+position: absolute;
+width: 48.66px;
+height: 8.63px;
+left: 105px;
+top: 493px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 13px;
+
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+
+.rectangle6{position: absolute;
+width: 478px;
+height: 53px;
+left: 87px;
+top: 547px;}
+.week5{
+position: absolute;
+width: 48.66px;
+height: 8.63px;
+left: 105px;
+top: 556px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 13px;
+
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+
+.rectangle7{position: absolute;
+width: 478px;
+height: 53px;
+left: 87px;
+top: 609px;}
+.week6{
+position: absolute;
+width: 48.66px;
+height: 8.63px;
+left: 105px;
+top: 618px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 13px;
+
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+
+.rectangle8{position: absolute;
+width: 478px;
+height: 53px;
+left: 87px;
+top: 671px;}
+.week7{
+position: absolute;
+width: 48.66px;
+height: 8.63px;
+left: 105px;
+top: 680px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 13px;
+
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+
+.rectangle9{position: absolute;
+width: 478px;
+height: 53px;
+left: 87px;
+top: 734px;}
+.week8{
+position: absolute;
+width: 48.66px;
+height: 8.63px;
+left: 105px;
+top: 743px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 13px;
+
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+
+.rectangle10{position: absolute;
+width: 478px;
+height: 53px;
+left: 87px;
+top: 797px;}
+.week9{
+position: absolute;
+width: 48.66px;
+height: 8.63px;
+left: 105px;
+top: 806px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 13px;
+
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+
+.rectangle11{position: absolute;
+width: 478px;
+height: 53px;
+left: 87px;
+top: 859px;}
+.week10{
+position: absolute;
+width: 48.66px;
+height: 8.63px;
+left: 105px;
+top:868px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 13px;
+
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+
+.rectangle12{position: absolute;
+width: 478px;
+height: 53px;
+left: 87px;
+top: 922px;}
+.week11{
+position: absolute;
+width: 48.66px;
+height: 8.63px;
+left: 105px;
+top: 931px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 13px;
+
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+
+.rectangle13{position: absolute;
+width: 478px;
+height: 53px;
+left: 87px;
+top: 984px;}
+.week12{
+position: absolute;
+width: 48.66px;
+height: 8.63px;
+left: 105px;
+top: 993px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 13px;
+
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;}
+}
+    </style>
+</head>
+<body>
+    
+    <header>
+        <img class="logo" src="pictures/photo_2023-08-05_17-03-50-removebg-preview.png">
+      
+        <nav class="navigation">
+            <a href="index.html"class="Home">Home</a>
+            <a href="index.html#p1" class="Subjects">Subjects</a>
+            <a href="index.html#p2" class="WhoWeAre">Who We Are</a>
+            <a href="index.html#contact" class="ContactMe">Contact Me</a>
+      </nav>
+      
+      </header>
+      
+      <div class="Ellipse1"></div>
+      <div class="Ellipse2"></div>
+      <div class="Ellipse3"></div>
+      <div class="Ellipse4"></div>
+      <div class="Ellipse5"></div>
+      <div class="Ellipse6"></div>
+
+      <div class="rectangle1"></div>
+      <div class="rectangle2"></div>
+      <div class="rectangle3"></div>
+      <div class="rectangle4"></div>
+      <div class="rectangle5"></div>
+      <div class="rectangle6"></div>
+      <div class="rectangle7"></div>
+      <div class="rectangle8"></div>
+      <div class="rectangle9"></div>
+      <div class="rectangle10"></div>
+      <div class="rectangle11"></div>
+      <div class="rectangle12"></div>
+      <div class="rectangle13"></div>
+
+
+     <p class="laser" >Laser Application</p>
+     <P class="week1">Week 1</P>
+     <P class="week2">Week 2</P>
+     <P class="week3">Week 3</P>
+     <P class="week4">Week 4</P>
+     <P class="week5">Week 5</P>
+     <P class="week6">Week 6</P>
+     <P class="week7">Week 7</P>
+     <P class="week8">Week 8</P>
+     <P class="week9">Week 9</P>
+     <P class="week10">Week 10</P>
+     <P class="week11">Week 11</P>
+     <P class="week12">Week 12</P>
+
+</body>
+</html>
